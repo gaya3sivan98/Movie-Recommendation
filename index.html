@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <title>Movies</title>
+  <meta charset='UTF-8'>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <style>
+   @keyframes Anim{
+   from{
+   opacity:0;
+   }
+   to{
+   color:white;
+   filter:drop-shadow(5px 5px 10px white);
+   }
+   }
+   @keyframes Anim1{
+   from{
+   transform:scale(1.0);
+   }
+   to{
+    transform:scale(1.2);
+   }
+   }
+   .flexbox{
+   display: flex;
+   flex-direction:row;
+   text-align:center;
+   perspective:1000px;
+   
+   }
+   .flexbox div{
+   justify-content:center;
+   background-image:url('sky.jpeg');
+   margin:9px;
+   padding:15px;
+   border:2px solid;
+   border-radius:10px;
+}
+.flexbox div:hover{
+transform: scale(1.1);
+}
+.button{
+background-color:Black;
+color:White;
+border:none;
+border-radius:5px;
+padding:10px 20px;
+width:50%;
+height:10%;
+cursor:pointer;
+font-size:16px;
+}
+.button:hover{
+background-color:#2F2F2F;
+animation: Anim1;
+animation-fill-mode:forwards;
+animation-duration:2s;
+perspective:100px;
+}
+.text{
+text-align:justify;
+font-size: 16px;
+color:#e0e0e0;
+text-shadow:1px 1px 2px rgba(0,0,0,2);
+font-family: Open Sans;
+}
+.img{
+border-radius:8px;
+filter:drop-shadow(10px 10px 20px black);
+}
+.heading{
+font-size:36px;
+text-align:center;
+color:white;
+text-shadow:2px 2px 5px gray;
+animation: Anim;
+animation-fill-mode:forwards;
+animation-duration:10s;
+}
+.background{
+background-image:url('sky.jpeg');
+}
+   </style>
+</head>
+<body class='background'>
+<h1 class='heading''>BEST SPACE MOVIES<h2>
+<div class='flexbox'>
+  <div><img class='img' src='interstellar.jpeg'>
+  <p class='text'>Interstellar follows Cooper, a former pilot who joins a space mission to find a new home for humanity as Earth becomes unlivable. Traveling through a wormhole, he faces distant worlds and emotional sacrifices. The film blends science, survival, and the bond between a father and his daughter.</p>
+  <a href='https://youtu.be/l2EqVahDON4?si=2sTfEQZKHg1MGjtr' target='_blank'>
+  <button class='button'>Watch</button></a></div>
+  <div><img class='img' src='Martian.jpeg'><p class='text'>The Martian follows astronaut Mark Watney, who is accidentally left behind on Mars after his crew believes he is dead. Using his science skills, he fights to survive on the planet with limited resources. Meanwhile, NASA and his crew work desperately to bring him home.</p>
+   <a href='https://www.hotstar.com/in/movies/the-martian/1770002321' target='_blank'>
+  <button class='button'>Watch</button></a></div>
+  <div><img class='img' src='gravity.jpeg'><p class='text'>Gravity follows two astronauts stranded in space after their shuttle is destroyed by debris. With no communication and limited oxygen, they struggle to survive while drifting above Earth. The film focuses on their fight for life in the vast, silent emptiness of space.</p>
+  <a href='https://www.youtube.com/watch?v=pGqcqQz8mZ0' target='_blank'>
+  <button class='button'>Watch</button></a></div>
+</div>
+</body>
+</html>
